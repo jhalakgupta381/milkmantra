@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">milkmantra</string>
+    <string name="login">Fresh Day’s For You</string>
+    <string name="font">Roboto</string>
+    <string name="number">Enter Mobile Number</string>
+    <string name="enterotp">Enter OTP</string>
+    <string name="message">Enter digit verification  code sent to
+Your moblie no. +91 --------</string>
+    <string name="resendotp">Resend OTP</string>
+    <string name="provider_asking">If you are Provider then call</string>
+    <string name="customer_asking">If  you are customer then skip</string>
+
+</resources>

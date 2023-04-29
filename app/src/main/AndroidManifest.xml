@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Milkmantra"
         tools:targetApi="31">
         <activity
+            android:name=".provider_home_page"
+            android:exported="false" />
+        <activity
             android:name=".customer.home_customer"
             android:exported="false" />
         <activity

@@ -7,12 +7,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.example.milkmantra.customer.create_account_customer;
+import com.example.milkmantra.provider.provider_home_page;
 
 public class asking_option extends AppCompatActivity {
 
     Button skip;
+    ImageView call;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +23,8 @@ public class asking_option extends AppCompatActivity {
 
 
         skip=findViewById(R.id.skip);
+        call=findViewById(R.id.call);
+
 
         skip.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,8 +33,21 @@ public class asking_option extends AppCompatActivity {
             }
         });
 
+        call.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                provider_Start();
+            }
+        });
+
 
     }
+
+    private void provider_Start() {
+        Intent intent=new Intent(getApplicationContext(), provider_home_page.class);
+        startActivity(intent);
+    }
+
     private void showSkipDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         View dialogView = getLayoutInflater().inflate(R.layout.popup_dialog, null);

@@ -2,10 +2,13 @@ package com.example.milkmantra;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.milkmantra.customer.create_account_customer;
 
 public class asking_option extends AppCompatActivity {
 
@@ -48,6 +51,8 @@ public class asking_option extends AppCompatActivity {
             public void onClick(View view) {
                 // Perform action for skipping
                 dialog.dismiss();
+                Intent intent=new Intent(getApplicationContext(), create_account_customer.class);
+                startActivity(intent);
             }
         });
 

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customer.home_customer"
+    android:background="@color/blue">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="50dp">
+        <!-- it will be change when use api -->
+        <TextView
+            android:layout_width="329dp"
+            android:layout_height="match_parent"
+            android:text="Your Customer Number Is 45"
+            android:textColor="@color/black"
+            android:textSize="23dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="30dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/searchbar"
+                android:layout_gravity="center" android:layout_marginRight="20dp">
+                <SearchView
+                    android:id="@+id/search_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:iconifiedByDefault="false"
+                    android:queryHint="@string/conatact"
+                    app:iconifiedByDefault="false"
+                    app:showAsAction="collapseActionView|ifRoom"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="46dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:src="@drawable/contact"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyycleViewOfHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

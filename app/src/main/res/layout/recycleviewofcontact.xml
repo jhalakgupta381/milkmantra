@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:background="@drawable/customer_home_recycleview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="131dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:text="Dahaval Varia"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/call" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/cross"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="100dp">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cow"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginRight="50dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buffelow"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginRight="50dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="10dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/morning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Morning" />
+
+        <RadioButton
+            android:id="@+id/evening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="evening" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp">
+
+            <EditText
+                android:id="@+id/moring_cow"
+                android:layout_width="42dp"
+                android:layout_height="25dp"
+                android:background="@drawable/quantity" />
+            <EditText
+                android:id="@+id/mornig_buffelow"
+                android:layout_width="42dp"
+                android:layout_height="25dp"
+                android:background="@drawable/quantity"
+                android:layout_marginLeft="50dp"/>
+            <EditText
+                android:id="@+id/mornig_other"
+                android:layout_width="42dp"
+                android:layout_height="25dp"
+                android:background="@drawable/quantity"
+                android:layout_marginLeft="60dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp">
+
+            <EditText
+                android:id="@+id/evening_cow"
+                android:layout_width="42dp"
+                android:layout_height="25dp"
+                android:background="@drawable/quantity" />
+            <EditText
+                android:id="@+id/evenig_buffelow"
+                android:layout_width="42dp"
+                android:layout_height="25dp"
+                android:background="@drawable/quantity"
+                android:layout_marginLeft="50dp"/>
+            <EditText
+                android:id="@+id/eveninig_other"
+                android:layout_width="42dp"
+                android:layout_height="25dp"
+                android:background="@drawable/quantity"
+                android:layout_marginLeft="60dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+    <Switch
+        android:id="@+id/vacation_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vacation_mode"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="95dp"
+            android:layout_height="32dp"
+            android:background="@drawable/button"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            />
+        <Button
+            android:layout_width="95dp"
+            android:layout_height="32dp"
+            android:background="@drawable/button"
+            android:text="@string/report"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            />
+        <Button
+            android:layout_width="95dp"
+            android:layout_height="32dp"
+            android:background="@drawable/button"
+            android:text="@string/Payment"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+</LinearLayout>

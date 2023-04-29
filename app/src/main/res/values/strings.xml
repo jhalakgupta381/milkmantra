@@ -12,4 +12,28 @@ Your moblie no. +91 --------</string>
     <string name="dialog">Are You Really Customer?</string>
     <string name="ok">Yes,Confirm</string>
     <string name="no">No,Cancel</string>
+    <string name="title_activity_create_new_account_customer">create_new_account_customer</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <!-- start customer Text-->
+    <string name="Customer_Name">Enter Name</string>
+    <string name="Customer_Phone">Enter Phone Number</string>
+    <string name="Customer_Pincode">Enter Pincode</string>
+    <string name="Customer_Address">Enter Address</string>
+    <string name="Customer_Area">Enter The Area</string>
+    <string name="Customer_Register">Register</string>
+    <string name="conatact">Enter The Contact Number</string>
+    <string name="vacation_mode">Vacation Mode</string>
+    <string name="save">SAVE</string>
+    <string name="report">REPORT</string>
+    <string name="Payment">PAYMENT</string>
+
 </resources>

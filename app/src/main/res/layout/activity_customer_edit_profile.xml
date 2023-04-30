@@ -51,31 +51,6 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Phone Number"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="5dp"/>
-
-            <EditText
-                android:id="@+id/Phone_Number"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@android:color/transparent"
-                android:inputType="number"
-                android:layout_gravity="center"/>
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="332dp"
-            android:layout_height="64dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:orientation="vertical"
-            android:background="@drawable/editetext">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="Pincode"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"/>
@@ -143,14 +118,11 @@
             android:layout_gravity="center"
             android:background="@drawable/button"
             android:gravity="center"
-            android:text="@string/Customer_Register"
+            android:text="@string/Update"
             android:textColor="@color/white"
             android:textSize="20dp"
             android:layout_marginTop="30dp"/>
     </LinearLayout>
-
-
-
 
 
 </LinearLayout>

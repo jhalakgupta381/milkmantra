@@ -35,10 +35,12 @@ Your moblie no. +91 --------</string>
     <string name="save">SAVE</string>
     <string name="report">REPORT</string>
     <string name="Payment">PAYMENT</string>
-
+    <string name="Logout">Logout</string>
+    <string name="Update">Update</string>
 
 
     <!-- start provider text-->
     <string name="pc_unique_number">Enter The Number</string>
+
 
 </resources>

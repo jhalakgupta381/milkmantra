@@ -1,7 +1,6 @@
 package com.example.milkmantra;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,7 +9,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.milkmantra.customer.create_account_customer;
-import com.example.milkmantra.provider.provider_home_page;
 
 public class asking_option extends AppCompatActivity {
 
@@ -33,20 +31,11 @@ public class asking_option extends AppCompatActivity {
             }
         });
 
-        call.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                provider_Start();
-            }
-        });
+
 
 
     }
 
-    private void provider_Start() {
-        Intent intent=new Intent(getApplicationContext(), provider_home_page.class);
-        startActivity(intent);
-    }
 
     private void showSkipDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);

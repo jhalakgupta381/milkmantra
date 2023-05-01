@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.milkmantra.customer.create_account_customer;
+import com.example.milkmantra.provider.provider_verification_page;
 
 public class asking_option extends AppCompatActivity {
 
@@ -28,6 +29,18 @@ public class asking_option extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 showSkipDialog();
+            }
+        });
+
+        call.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                provider_start();
+            }
+
+            private void provider_start() {
+                Intent intent=new Intent(getApplicationContext(), provider_verification_page.class);
+                startActivity(intent);
             }
         });
 

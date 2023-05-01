@@ -41,6 +41,9 @@ Your moblie no. +91 --------</string>
 
     <!-- start provider text-->
     <string name="pc_unique_number">Enter The Number</string>
+    <string name="account_Verification">Account Verification!</string>
+    <string name="acc_ver_message">Your Account Verify Successfully,Please Press Continue </string>
+    <string name="btn_continue">Continue</string>
 
 
 </resources>

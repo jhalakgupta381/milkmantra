@@ -1,4 +1,4 @@
-package model;
+package com.example.milkmantra.model;
 
 public class Customer_Add_Provider_model {
     String Name,Cow_Morning,Cow_Evening,Buffelow_Morning,Buffelow_Evening,Other_Morning,Other_Evening;

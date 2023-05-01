@@ -181,7 +181,7 @@
                 android:layout_width="41dp"
                 android:layout_height="42dp"
                 android:layout_marginLeft="40dp"
-                android:src="@drawable/notification" />
+                android:src="@drawable/notification_icon" />
 
             <ImageView
                 android:id="@+id/Profile"

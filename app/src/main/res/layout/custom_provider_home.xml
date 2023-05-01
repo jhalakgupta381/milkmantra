@@ -4,6 +4,8 @@
     android:layout_height="51dp"
     android:orientation="horizontal"
     android:background="@drawable/searchbar"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
     >
     <TextView
         android:id="@+id/Number"
@@ -14,17 +16,18 @@
         android:textSize="14dp"
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="10dp"/>
+
     <TextView
         android:id="@+id/Name"
-        android:layout_width="wrap_content"
+        android:layout_width="123dp"
         android:layout_height="wrap_content"
-        android:text="Manoj Bhai"
-        android:textColor="@color/black"
-        android:textSize="14dp"
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="50dp"
-        />
+        android:text="Manoj Bhai"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
     <Button
+        android:id="@+id/Order"
         android:layout_width="64dp"
         android:layout_height="27dp"
         android:background="@drawable/button"

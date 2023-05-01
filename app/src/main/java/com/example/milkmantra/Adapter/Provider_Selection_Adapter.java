@@ -12,11 +12,10 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 import com.example.milkmantra.R;
-import com.example.milkmantra.customer.Provider_Selection;
 
 import java.util.ArrayList;
 
-import model.Customer_Add_Provider_model;
+import com.example.milkmantra.model.Customer_Add_Provider_model;
 
 public class Provider_Selection_Adapter  extends RecyclerView.Adapter<Provider_Selection_Adapter.ViewHolder> {
 
@@ -39,13 +38,7 @@ public class Provider_Selection_Adapter  extends RecyclerView.Adapter<Provider_S
 
     @Override
     public void onBindViewHolder(@NonNull Provider_Selection_Adapter.ViewHolder viewHolder, int i) {
-     /*   viewHolder.Provider_name.setText(arr.get(i).name);
-        viewHolder.ed1.setText((int) arr.get(i).cow_moring);
-        viewHolder.ed2.setText((int) arr.get(i).buffelow_moring);
-        viewHolder.ed3.setText((int)arr.get(i).other_moring);
-        viewHolder.ed4.setText((int)arr.get(i).cow_evening);
-        viewHolder.ed5.setText((int)arr.get(i).buffelow_evening);
-        viewHolder.ed6.setText((int)arr.get(i).other_evening);*/
+
 
         viewHolder.name.setText(provider_selections.get(i).getName());
         viewHolder.ed1.setText(provider_selections.get(i).getCow_Morning());

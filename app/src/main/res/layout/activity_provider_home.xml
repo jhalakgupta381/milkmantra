@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".provider.provider_home"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="Home"
+            android:textSize="26dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="39dp"
+                android:src="@drawable/notification_icon"
+                android:layout_marginLeft="30dp"/>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/profile" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="34dp"
+                android:src="@drawable/more_setting"
+                android:layout_marginLeft="40dp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="328dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/searchbar"
+        android:iconifiedByDefault="false"
+        android:queryHint="@string/CNumber"
+        app:iconifiedByDefault="false"
+        app:showAsAction="collapseActionView|ifRoom"
+        app:queryBackground="@null"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ProviderHomeRecycleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

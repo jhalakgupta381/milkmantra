@@ -59,7 +59,8 @@
                     android:iconifiedByDefault="false"
                     android:queryHint="@string/conatact"
                     app:iconifiedByDefault="false"
-                    app:showAsAction="collapseActionView|ifRoom" />
+                    app:showAsAction="collapseActionView|ifRoom"
+                    app:queryBackground="@null"/>
 
                <ImageView
                    android:layout_width="50dp"
@@ -103,7 +104,7 @@
                     android:layout_width="41dp"
                     android:layout_height="42dp"
                     android:layout_marginLeft="40dp"
-                    android:src="@drawable/notification" />
+                    android:src="@drawable/notification_icon" />
 
                 <ImageView
                     android:id="@+id/Profile"

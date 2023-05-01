@@ -13,7 +13,7 @@ import com.example.milkmantra.R;
 
 import java.util.ArrayList;
 
-import model.Customer_Add_Provider_model;
+import com.example.milkmantra.model.Customer_Add_Provider_model;
 
 public class home_customer extends AppCompatActivity {
     ArrayList<Customer_Add_Provider_model> provider_selections=new ArrayList<Customer_Add_Provider_model>();

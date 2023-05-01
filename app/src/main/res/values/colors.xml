@@ -14,4 +14,6 @@
     <color name="black_900">#000000</color>
     <color name="light_blue_300">#5dc5ff</color>
     <color name="white_A700">#ffffff</color>
+    <color name="notification_border">#C5C5BD</color>
+    <color name="notification_color">#89F8C3</color>
 </resources>

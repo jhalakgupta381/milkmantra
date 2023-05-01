@@ -1,4 +1,4 @@
-package model;
+package com.example.milkmantra.model;
 
 import java.io.Serializable;
 

@@ -7,14 +7,16 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.SearchView;
 
+import com.example.milkmantra.Adapter.Provider_Selection_Adapter;
 import com.example.milkmantra.R;
 
 import java.util.ArrayList;
 
+import model.Customer_Add_Provider_model;
+
 public class home_customer extends AppCompatActivity {
-    ArrayList<Provider_Selection> provider_selections=new ArrayList<>();
+    ArrayList<Customer_Add_Provider_model> provider_selections=new ArrayList<Customer_Add_Provider_model>();
      RecyclerView recyclerView;
  ImageView profile;
     @Override
@@ -22,15 +24,22 @@ public class home_customer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_customer);
 
-       /* recyclerView=findViewById(R.id.recyycleViewOfHome);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        Provider_Selection model=new Provider_Selection("Dhaval Varia",2.5,0,0,0,2.5,0);
-
-        provider_selections.add(model);
-        Provider_Selection_Adapter provider_selection_adapter=new Provider_Selection_Adapter(this,provider_selections);
-        recyclerView.setAdapter(provider_selection_adapter);*/
 
         profile=findViewById(R.id.Profile);
+        recyclerView=findViewById(R.id.recyycleViewOfHome);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        Customer_Add_Provider_model customer_add_provider_mode=new Customer_Add_Provider_model("Mayank","2","3","2","0","0","0","false");
+        provider_selections.add(customer_add_provider_mode);
+        provider_selections.add(new Customer_Add_Provider_model("Darshil","2","3","5","0","0","0","false"));
+        provider_selections.add(new Customer_Add_Provider_model("Umang","2","3","5","0","0","0","false"));
+        provider_selections.add(new Customer_Add_Provider_model("Nikhil","2","3","5","0","0","0","false"));
+        provider_selections.add(new Customer_Add_Provider_model("Jayesh","2","3","5","0","0","0","false"));
+        provider_selections.add(new Customer_Add_Provider_model("Manoj","2","3","5","0","0","0","false"));
+        Provider_Selection_Adapter provider_selection_adapter=new Provider_Selection_Adapter(this,provider_selections);
+        recyclerView.setAdapter(provider_selection_adapter);
+
+
+
 
         profile.setOnClickListener(new View.OnClickListener() {
             @Override

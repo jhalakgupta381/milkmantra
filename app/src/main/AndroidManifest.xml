@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
-        android:allowBackup="true"
         android:name=".MyApplication_OnlineTransfer"
+        android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Milkmantra"
         tools:targetApi="31">
+        <activity
+            android:name=".customer_notification"
+            android:exported="false" />
         <activity
             android:name=".provider.provider_verification_page"
             android:exported="false" />

@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class home_customer extends AppCompatActivity {
     ArrayList<Provider_Selection> provider_selections=new ArrayList<>();
- RecyclerView recyclerView;
+     RecyclerView recyclerView;
  ImageView profile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

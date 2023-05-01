@@ -11,8 +11,29 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue">
+        <ImageView
+            android:id="@+id/Back"
+            android:layout_width="53dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create New Account"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="680dp"
-        android:layout_marginTop="50dp"
         android:background="#EDE9E9"
         android:orientation="vertical">
 
@@ -45,7 +66,6 @@
             android:layout_width="332dp"
             android:layout_height="64dp"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
             android:orientation="vertical"
             android:background="@drawable/editetext">
             <TextView
@@ -90,28 +110,7 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="332dp"
-            android:layout_height="64dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:orientation="vertical"
-            android:background="@drawable/editetext">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Area"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="5dp"/>
 
-            <EditText
-                android:id="@+id/Area"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@android:color/transparent"
-                android:layout_gravity="center"/>
-
-        </LinearLayout>
         <LinearLayout
             android:layout_width="332dp"
             android:layout_height="64dp"

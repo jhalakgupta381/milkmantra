@@ -23,20 +23,7 @@ public class customer_profile extends AppCompatActivity {
 
 
         logout=findViewById(R.id.Logout);
-        edit_profile=findViewById(R.id.edit_profile);
-
-
-        edit_profile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                update();
-            }
-
-            private void update() {
-                Intent intent=new Intent(getApplicationContext(),customer_edit_profile.class);
-                startActivity(intent);
-            }
-        });
+        edit_profile=findViewById(R.id.Edit_profile);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,6 +31,18 @@ public class customer_profile extends AppCompatActivity {
             }
             private void logout() {
                 Intent intent=new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        edit_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                edit_profile();
+            }
+
+            private void edit_profile() {
+                Intent intent=new Intent(getApplicationContext(),customer_edit_profile.class);
                 startActivity(intent);
             }
         });

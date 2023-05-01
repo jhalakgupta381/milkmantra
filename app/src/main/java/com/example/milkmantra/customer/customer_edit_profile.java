@@ -9,21 +9,21 @@ import android.widget.Button;
 import com.example.milkmantra.R;
 
 public class customer_edit_profile extends AppCompatActivity {
-    Button update;
 
+    Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_edit_profile);
 
-
-        update.setOnClickListener(new View.OnClickListener() {
+        btn=findViewById(R.id.Update);
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                update();
+                Update();
             }
 
-            private void update() {
+            private void Update() {
                 Intent intent=new Intent(getApplicationContext(),customer_profile.class);
                 startActivity(intent);
             }

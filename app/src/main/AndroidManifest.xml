@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Milkmantra"
         tools:targetApi="31">
         <activity
-            android:name=".customer_notification"
+            android:name=".customer.customer_notification"
             android:exported="false" />
         <activity
             android:name=".provider.provider_verification_page"

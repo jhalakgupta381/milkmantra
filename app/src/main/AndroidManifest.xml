@@ -13,6 +13,16 @@
         android:theme="@style/Theme.Milkmantra"
         tools:targetApi="31">
         <activity
+            android:name=".provider.provider_profile"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".provider.provider_customer_report"
+            android:exported="false" />
+        <activity
             android:name=".provider.provider_sales"
             android:exported="false" />
         <activity

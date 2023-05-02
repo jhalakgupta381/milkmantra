@@ -14,7 +14,7 @@ import com.example.milkmantra.R;
 
 public class provider_more extends AppCompatActivity {
 
-    LinearLayout logout,language,sales;
+    LinearLayout logout,language,sales,customer_report,profile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,6 +75,32 @@ public class provider_more extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        // it is handle the report of customer
+        customer_report=findViewById(R.id.Customer_Report);
+
+        customer_report.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),provider_customer_report.class);
+                startActivity(intent);
+            }
+        });
+
+
+        // It is use for profile
+
+        profile=findViewById(R.id.Profile);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),provider_profile.class);
+                startActivity(intent);
+            }
+        });
+
+
 
 
     }

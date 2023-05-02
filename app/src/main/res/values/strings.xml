@@ -45,6 +45,7 @@ Your moblie no. +91 --------</string>
     <string name="acc_ver_message">Your Account Verify Successfully,Please Press Continue </string>
     <string name="btn_continue">Continue</string>
     <string name="CNumber">Enter Customer Number</string>
+    <string name="view">View</string>
 
 
     <!-- drop down-->
@@ -64,12 +65,15 @@ Your moblie no. +91 --------</string>
         <item>Octomber</item>
         <item>December</item>
     </string-array>
-
-
-
-
-    
-    
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 
 
 </resources>

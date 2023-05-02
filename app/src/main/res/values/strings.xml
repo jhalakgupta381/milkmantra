@@ -50,6 +50,26 @@ Your moblie no. +91 --------</string>
     <!-- drop down-->
     <string name="select">Select Item</string>
     <string name="title_activity_provider_more_page">provider_more_page</string>
+    <string-array name="mothes">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>Aprill</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>November</item>
+        <item>Octomber</item>
+        <item>December</item>
+    </string-array>
+
+
+
+
+    
+    
 
 
 </resources>

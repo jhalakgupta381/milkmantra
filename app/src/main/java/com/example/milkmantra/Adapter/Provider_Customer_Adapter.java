@@ -60,11 +60,7 @@ public class Provider_Customer_Adapter extends   RecyclerView.Adapter<Provider_C
 
                     final AlertDialog dialog = builder.create();
 
-               /* WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
-                lp.copyFrom(dialog.getWindow().getAttributes());
-                lp.width = 300;  // set the width of the dialog window to 300dp
-                lp.height = 200;  // set the height of the dialog window to 200dp
-                dialog.getWindow().setAttributes(lp);*/
+
 
                     Button cancelButton = dialogView.findViewById(R.id.Denied);
                     cancelButton.setOnClickListener(new View.OnClickListener() {

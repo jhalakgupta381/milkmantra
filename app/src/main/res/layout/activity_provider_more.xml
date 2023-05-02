@@ -14,7 +14,7 @@
         android:background="@color/blue"/>
 
     <LinearLayout
-        android:id="@+id/profile"
+        android:id="@+id/Profile"
         android:layout_width="321dp"
         android:layout_height="51dp"
         android:layout_gravity="center_horizontal"
@@ -39,7 +39,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/customer_Report"
+        android:id="@+id/Customer_Report"
         android:layout_width="321dp"
         android:layout_height="51dp"
         android:layout_gravity="center_horizontal"
@@ -89,7 +89,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/sales"
+        android:id="@+id/Sales"
         android:layout_width="321dp"
         android:layout_height="51dp"
         android:layout_gravity="center_horizontal"
@@ -115,7 +115,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/setting"
+        android:id="@+id/Language"
         android:layout_width="321dp"
         android:layout_height="51dp"
         android:layout_gravity="center_horizontal"
@@ -123,15 +123,41 @@
         android:layout_marginTop="20dp"
         >
         <ImageView
-            android:layout_width="23dp"
-            android:layout_height="29dp"
-            android:src="@drawable/setting"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/language"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="30dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Setting"
+            android:text="Language"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Logout"
+        android:layout_width="321dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/more_design"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:src="@drawable/logout"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Logout"
             android:textColor="@color/black"
             android:textSize="20dp"
             android:layout_gravity="center_vertical"

@@ -49,6 +49,7 @@ Your moblie no. +91 --------</string>
 
     <!-- drop down-->
     <string name="select">Select Item</string>
+    <string name="title_activity_provider_more_page">provider_more_page</string>
 
 
 </resources>

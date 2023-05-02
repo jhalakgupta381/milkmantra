@@ -23,6 +23,8 @@ public class home_customer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_customer);
+
+        // it for customer
    
         notification=findViewById(R.id.Notification);
         profile=findViewById(R.id.Profile);
@@ -63,6 +65,10 @@ public class home_customer extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
+        // It is for notification
 
 
 

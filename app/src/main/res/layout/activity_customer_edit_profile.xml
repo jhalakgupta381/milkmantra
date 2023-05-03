@@ -8,24 +8,18 @@
     android:background="@color/blue"
     android:orientation="vertical">
 
-    <LinearLayout
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:layout_width="53dp"
-            android:layout_height="56dp"
-            android:src="@drawable/back"/>
-
-        <TextView
-            android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/EditProfileToolbar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:text="Edit Profile"
-            android:textSize="026dp"
-            android:layout_gravity="center"
-            />
-    </LinearLayout>
+            android:background="@color/blue">
 
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

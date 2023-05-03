@@ -6,10 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".provider.provider_customer_report"
     android:orientation="vertical">
-    <LinearLayout
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="66dp"
-        android:background="@color/blue"></LinearLayout>
+        android:layout_height="wrap_content" >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/ProviderReportToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue">
+            <ImageView
+                android:id="@+id/Home"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/home"
+                android:layout_gravity="end"
+                android:layout_marginRight="20dp"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
 
     <SearchView
         android:id="@+id/search_view"

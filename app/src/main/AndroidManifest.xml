@@ -10,57 +10,71 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Milkmantra"
         tools:targetApi="31">
         <activity
             android:name=".provider.provider_profile"
-            android:exported="false" />
-        <activity
-            android:name=".ui.login.LoginActivity"
             android:exported="false"
-            android:label="@string/title_activity_login" />
+            android:theme="@style/myTheme.Milkmantra"
+            android:parentActivityName=".provider.provider_more"/>
+
         <activity
             android:name=".provider.provider_customer_report"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/myTheme.Milkmantra"
+            android:parentActivityName=".provider.provider_more"/>
         <activity
             android:name=".provider.provider_sales"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/myTheme.Milkmantra"
+            android:parentActivityName=".provider.provider_more"/>
         <activity
             android:name=".provider.provider_more"
-            android:exported="false" />
-        <activity
-            android:name=".provider.provider_notification"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/myTheme.Milkmantra"
+            android:parentActivityName=".provider.provider_home"/>
+
         <activity
             android:name=".provider.provider_home"
-            android:exported="false" />
-        <activity
-            android:name=".customer.customer_notification"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/myTheme.Milkmantra"/>
         <activity
             android:name=".provider.provider_verification_page"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/myTheme.Milkmantra"/>
         <activity
             android:name=".customer.customer_edit_profile"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/myTheme.Milkmantra"
+            android:parentActivityName=".customer.customer_profile"/>
         <activity
             android:name=".customer.customer_profile"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/myTheme.Milkmantra"
+            android:parentActivityName=".customer.home_customer"/>
         <activity
             android:name=".customer.home_customer"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/myTheme.Milkmantra"/>
         <activity
             android:name=".customer.create_account_customer"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/myTheme.Milkmantra"
+            android:parentActivityName=".asking_option"/>
         <activity
             android:name=".asking_option"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/myTheme.Milkmantra"
+            />
         <activity
             android:name=".otpverification"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/myTheme.Milkmantra"
+            android:parentActivityName="com.example.milkmantra.MainActivity"/>
+
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/myTheme.Milkmantra">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

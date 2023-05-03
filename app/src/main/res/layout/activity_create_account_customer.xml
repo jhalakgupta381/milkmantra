@@ -9,25 +9,18 @@
     android:orientation="vertical">
 
 
-    <LinearLayout
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/blue">
-        <ImageView
-            android:id="@+id/Back"
-            android:layout_width="53dp"
-            android:layout_height="40dp"
-            android:src="@drawable/back"
-            android:layout_gravity="center_vertical"/>
-
-        <TextView
-            android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/CustomerRegistrationToolbar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Create New Account"
-            android:textColor="@color/black"
-            android:textSize="24dp"
-            android:layout_gravity="center_vertical"/>
-    </LinearLayout>
+            android:background="@color/blue">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
 
 
 

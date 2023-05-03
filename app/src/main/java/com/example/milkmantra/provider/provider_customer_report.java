@@ -1,9 +1,13 @@
 package com.example.milkmantra.provider;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.example.milkmantra.Adapter.Provider_Customer_Report_Adapter;
 import com.example.milkmantra.R;
@@ -12,13 +16,39 @@ import com.example.milkmantra.model.Provider_Customer_Report;
 import java.util.ArrayList;
 
 public class provider_customer_report extends AppCompatActivity {
+
+    Toolbar toolbar;
     RecyclerView recyclerView;
     ArrayList<Provider_Customer_Report> reports=new ArrayList<>();
+
+    ImageView home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_provider_customer_report);
+
+        // it for toolbar
+
+        toolbar=findViewById(R.id.ProviderReportToolbar);
+        setSupportActionBar(toolbar);
+
+        if(getSupportActionBar()!=null){
+            getSupportActionBar().setTitle("Report");
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
+
+        // handle Home icon
+
+        home=findViewById(R.id.Home);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),provider_home.class);
+                startActivity(intent);
+            }
+        });
 
         // here handle recycleview
 

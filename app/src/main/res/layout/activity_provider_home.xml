@@ -7,46 +7,25 @@
     tools:context=".provider.provider_home"
     android:orientation="vertical">
 
-    <LinearLayout
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="66dp"
-        android:layout_gravity="center_vertical"
-        android:background="@color/blue">
-
-        <TextView
-            android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/ProviderHomeToolbar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="20dp"
-            android:text="Home"
-            android:textSize="26dp" />
-        <RelativeLayout
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="end"
-            android:layout_gravity="center">
+            android:background="@color/blue">
             <ImageView
                 android:id="@+id/More"
-                android:layout_width="32dp"
-                android:layout_height="34dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/more_setting"
-                android:layout_marginLeft="40dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginRight="50dp"
+                android:layout_gravity="end"
+                android:layout_marginRight="20dp"/>
 
-                />
+        </android.support.v7.widget.Toolbar>
 
-        </RelativeLayout>
-
-
-
-
-
-
-
-
-    </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
 
 
     <SearchView

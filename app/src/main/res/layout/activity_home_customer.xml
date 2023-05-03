@@ -7,21 +7,26 @@
     tools:context=".customer.home_customer"
     android:background="@color/white"
     android:orientation="vertical">
-    <LinearLayout
+
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/blue">
-
-        <TextView
-            android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/HomeToolbar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Home"
-            android:textColor="@color/black"
-            android:textSize="24dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="20dp"/>
-    </LinearLayout>
+            android:background="@color/blue">
+            <ImageView
+                android:id="@+id/Profile"
+                android:layout_width="52dp"
+                android:layout_height="46dp"
+                android:src="@drawable/profile"
+                android:layout_gravity="end"
+                android:layout_marginRight="20dp"/>
 
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -83,37 +88,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
-                android:background="@color/white"
-                android:orientation="horizontal"
-                android:layout_alignParentBottom="true">
 
-                <ImageView
-                    android:id="@+id/Home"
-                    android:layout_width="38dp"
-                    android:layout_height="38dp"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="40dp"
-                    android:src="@drawable/home" />
-
-                <ImageView
-                    android:id="@+id/Notification"
-                    android:layout_width="41dp"
-                    android:layout_height="42dp"
-                    android:layout_marginLeft="40dp"
-                    android:src="@drawable/notification_icon" />
-
-                <ImageView
-                    android:id="@+id/Profile"
-                    android:layout_width="41dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="80dp"
-                    android:src="@drawable/profile" />
-
-            </LinearLayout>
 
 
         </RelativeLayout>

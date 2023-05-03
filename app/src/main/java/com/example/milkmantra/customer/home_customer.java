@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -18,15 +19,23 @@ import com.example.milkmantra.model.Customer_Add_Provider_model;
 public class home_customer extends AppCompatActivity {
     ArrayList<Customer_Add_Provider_model> provider_selections=new ArrayList<Customer_Add_Provider_model>();
      RecyclerView recyclerView;
- ImageView profile,notification;
+ ImageView profile;
+ Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_customer);
 
+        toolbar=findViewById(R.id.HomeToolbar);
+        setSupportActionBar(toolbar);
+
+        if(getApplicationContext()!=null){
+            getSupportActionBar().setTitle("Home");
+        }
+
         // it for customer
    
-        notification=findViewById(R.id.Notification);
+
         profile=findViewById(R.id.Profile);
         recyclerView=findViewById(R.id.recyycleViewOfHome);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -41,7 +50,7 @@ public class home_customer extends AppCompatActivity {
         recyclerView.setAdapter(provider_selection_adapter);
 
 
-        notification.setOnClickListener(new View.OnClickListener() {
+        /*notification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 open_Notification();
@@ -51,7 +60,7 @@ public class home_customer extends AppCompatActivity {
                 Intent intent=new Intent(getApplicationContext(),customer_notification.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
 
         profile.setOnClickListener(new View.OnClickListener() {

@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -16,6 +17,7 @@ import java.util.ArrayList;
 
 public class provider_home extends AppCompatActivity {
 
+    Toolbar toolbar;
     RecyclerView recyclerView;
     ArrayList<Custom_Provider_Home> customer_list=new ArrayList<>();
     ImageView more;
@@ -23,6 +25,13 @@ public class provider_home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_provider_home);
+
+        toolbar=findViewById(R.id.ProviderHomeToolbar);
+        setSupportActionBar(toolbar);
+
+        if(getSupportActionBar()!=null){
+            getSupportActionBar().setTitle("Home");
+        }
 
         // it for customer
         recyclerView=findViewById(R.id.ProviderHomeRecycleView);

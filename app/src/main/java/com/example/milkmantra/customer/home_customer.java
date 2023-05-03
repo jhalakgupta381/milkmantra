@@ -1,5 +1,7 @@
 package com.example.milkmantra.customer;
 
+import static android.widget.Toast.LENGTH_LONG;
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +10,8 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.SearchView;
+import android.widget.Toast;
 
 import com.example.milkmantra.Adapter.Provider_Selection_Adapter;
 import com.example.milkmantra.R;
@@ -19,8 +23,11 @@ import com.example.milkmantra.model.Customer_Add_Provider_model;
 public class home_customer extends AppCompatActivity {
     ArrayList<Customer_Add_Provider_model> provider_selections=new ArrayList<Customer_Add_Provider_model>();
      RecyclerView recyclerView;
+    Provider_Selection_Adapter provider_selection_adapter;
  ImageView profile;
  Toolbar toolbar;
+ SearchView searchView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +39,25 @@ public class home_customer extends AppCompatActivity {
         if(getApplicationContext()!=null){
             getSupportActionBar().setTitle("Home");
         }
+
+
+        // here handle the search
+
+        searchView=findViewById(R.id.search_view);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                fileList(s);
+
+                return false;
+            }
+        });
+
 
         // it for customer
    
@@ -46,7 +72,7 @@ public class home_customer extends AppCompatActivity {
         provider_selections.add(new Customer_Add_Provider_model("Nikhil","2","3","5","0","0","0","false"));
         provider_selections.add(new Customer_Add_Provider_model("Jayesh","2","3","5","0","0","0","false"));
         provider_selections.add(new Customer_Add_Provider_model("Manoj","2","3","5","0","0","0","false"));
-        Provider_Selection_Adapter provider_selection_adapter=new Provider_Selection_Adapter(this,provider_selections);
+        provider_selection_adapter=new Provider_Selection_Adapter(this,provider_selections);
         recyclerView.setAdapter(provider_selection_adapter);
 
 
@@ -80,6 +106,24 @@ public class home_customer extends AppCompatActivity {
         // It is for notification
 
 
+
+    }
+
+    private void fileList(String s) {
+        ArrayList<Customer_Add_Provider_model> filterList=new ArrayList<>();
+        for(Customer_Add_Provider_model item:provider_selections){
+            if(item.getName().contains(s)){
+                filterList.add(item);
+            }
+        }
+        if(filterList.isEmpty()){
+            Toast.makeText(this,"No Data found",Toast.LENGTH_LONG).show();
+        }
+        else {
+            provider_selection_adapter.setFilteredList(filterList);
+            recyclerView.scrollToPosition(0);
+
+        }
 
     }
 }

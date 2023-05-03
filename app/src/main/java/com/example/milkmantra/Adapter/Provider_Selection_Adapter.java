@@ -22,6 +22,11 @@ public class Provider_Selection_Adapter  extends RecyclerView.Adapter<Provider_S
     Context context;
     ArrayList<Customer_Add_Provider_model> provider_selections;
 
+
+     public  void  setFilteredList(ArrayList<Customer_Add_Provider_model> list){
+         provider_selections=list;
+         notifyDataSetChanged();
+     }
     public Provider_Selection_Adapter(Context context, ArrayList<Customer_Add_Provider_model> provider_selections) {
         this.context = context;
         this.provider_selections = provider_selections;

@@ -21,15 +21,25 @@ import com.example.milkmantra.customer.create_account_customer;
 import com.example.milkmantra.model.Custom_Provider_Home;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Provider_Customer_Adapter extends   RecyclerView.Adapter<Provider_Customer_Adapter.ViewHolder>{
 
     Context context;
     ArrayList<Custom_Provider_Home>  customer_list;
 
+
+    // here handle the search
+
+    public void setFilteredList(List<Custom_Provider_Home> filteredList,String no) {
+        this.customer_list = (ArrayList<Custom_Provider_Home>) filteredList;
+        notifyDataSetChanged();
+
+    }
+
     public Provider_Customer_Adapter(Context context, ArrayList<Custom_Provider_Home> customer_list) {
         this.context = context;
-        this.customer_list = customer_list;
+        this.customer_list=customer_list;
     }
 
     @NonNull
